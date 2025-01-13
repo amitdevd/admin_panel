@@ -1,0 +1,41 @@
+dev{
+    color: darkblue;
+}
+
+$prefix: s;
+
+$space-values: (
+  "0": "0",
+  "1": "1",
+  "2": "2",
+  "3": "3",
+  "4": "4",
+  "5": "5",
+  "6": "6",
+  "7": "7",
+  "8": "8",
+  "9": "9",
+  "10": "10",
+);
+
+$sides: (
+  "": "all",
+  "t": "top",
+  "r": "right",
+  "b": "bottom",
+  "l": "left",
+);
+
+@each $space-key, $space-value in $space-values {
+  @each $side-key, $side-value in $sides {
+    $property: if($side-key == '', '', -#{$side-value});
+
+    .#{$prefix}-m#{$side-key}-#{$space-key} {
+      margin#{$property}: #{$space-value}rem;
+    }
+
+    .#{$prefix}-p#{$side-key}-#{$space-key} {
+      padding#{$property}: #{$space-value}rem;
+    }
+  }
+}

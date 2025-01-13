@@ -1,0 +1,445 @@
+dev {
+  color: darkblue;
+}
+
+.s-m-0 {
+  margin: 0rem;
+}
+
+.s-p-0 {
+  padding: 0rem;
+}
+
+.s-mt-0 {
+  margin-top: 0rem;
+}
+
+.s-pt-0 {
+  padding-top: 0rem;
+}
+
+.s-mr-0 {
+  margin-right: 0rem;
+}
+
+.s-pr-0 {
+  padding-right: 0rem;
+}
+
+.s-mb-0 {
+  margin-bottom: 0rem;
+}
+
+.s-pb-0 {
+  padding-bottom: 0rem;
+}
+
+.s-ml-0 {
+  margin-left: 0rem;
+}
+
+.s-pl-0 {
+  padding-left: 0rem;
+}
+
+.s-m-1 {
+  margin: 1rem;
+}
+
+.s-p-1 {
+  padding: 1rem;
+}
+
+.s-mt-1 {
+  margin-top: 1rem;
+}
+
+.s-pt-1 {
+  padding-top: 1rem;
+}
+
+.s-mr-1 {
+  margin-right: 1rem;
+}
+
+.s-pr-1 {
+  padding-right: 1rem;
+}
+
+.s-mb-1 {
+  margin-bottom: 1rem;
+}
+
+.s-pb-1 {
+  padding-bottom: 1rem;
+}
+
+.s-ml-1 {
+  margin-left: 1rem;
+}
+
+.s-pl-1 {
+  padding-left: 1rem;
+}
+
+.s-m-2 {
+  margin: 2rem;
+}
+
+.s-p-2 {
+  padding: 2rem;
+}
+
+.s-mt-2 {
+  margin-top: 2rem;
+}
+
+.s-pt-2 {
+  padding-top: 2rem;
+}
+
+.s-mr-2 {
+  margin-right: 2rem;
+}
+
+.s-pr-2 {
+  padding-right: 2rem;
+}
+
+.s-mb-2 {
+  margin-bottom: 2rem;
+}
+
+.s-pb-2 {
+  padding-bottom: 2rem;
+}
+
+.s-ml-2 {
+  margin-left: 2rem;
+}
+
+.s-pl-2 {
+  padding-left: 2rem;
+}
+
+.s-m-3 {
+  margin: 3rem;
+}
+
+.s-p-3 {
+  padding: 3rem;
+}
+
+.s-mt-3 {
+  margin-top: 3rem;
+}
+
+.s-pt-3 {
+  padding-top: 3rem;
+}
+
+.s-mr-3 {
+  margin-right: 3rem;
+}
+
+.s-pr-3 {
+  padding-right: 3rem;
+}
+
+.s-mb-3 {
+  margin-bottom: 3rem;
+}
+
+.s-pb-3 {
+  padding-bottom: 3rem;
+}
+
+.s-ml-3 {
+  margin-left: 3rem;
+}
+
+.s-pl-3 {
+  padding-left: 3rem;
+}
+
+.s-m-4 {
+  margin: 4rem;
+}
+
+.s-p-4 {
+  padding: 4rem;
+}
+
+.s-mt-4 {
+  margin-top: 4rem;
+}
+
+.s-pt-4 {
+  padding-top: 4rem;
+}
+
+.s-mr-4 {
+  margin-right: 4rem;
+}
+
+.s-pr-4 {
+  padding-right: 4rem;
+}
+
+.s-mb-4 {
+  margin-bottom: 4rem;
+}
+
+.s-pb-4 {
+  padding-bottom: 4rem;
+}
+
+.s-ml-4 {
+  margin-left: 4rem;
+}
+
+.s-pl-4 {
+  padding-left: 4rem;
+}
+
+.s-m-5 {
+  margin: 5rem;
+}
+
+.s-p-5 {
+  padding: 5rem;
+}
+
+.s-mt-5 {
+  margin-top: 5rem;
+}
+
+.s-pt-5 {
+  padding-top: 5rem;
+}
+
+.s-mr-5 {
+  margin-right: 5rem;
+}
+
+.s-pr-5 {
+  padding-right: 5rem;
+}
+
+.s-mb-5 {
+  margin-bottom: 5rem;
+}
+
+.s-pb-5 {
+  padding-bottom: 5rem;
+}
+
+.s-ml-5 {
+  margin-left: 5rem;
+}
+
+.s-pl-5 {
+  padding-left: 5rem;
+}
+
+.s-m-6 {
+  margin: 6rem;
+}
+
+.s-p-6 {
+  padding: 6rem;
+}
+
+.s-mt-6 {
+  margin-top: 6rem;
+}
+
+.s-pt-6 {
+  padding-top: 6rem;
+}
+
+.s-mr-6 {
+  margin-right: 6rem;
+}
+
+.s-pr-6 {
+  padding-right: 6rem;
+}
+
+.s-mb-6 {
+  margin-bottom: 6rem;
+}
+
+.s-pb-6 {
+  padding-bottom: 6rem;
+}
+
+.s-ml-6 {
+  margin-left: 6rem;
+}
+
+.s-pl-6 {
+  padding-left: 6rem;
+}
+
+.s-m-7 {
+  margin: 7rem;
+}
+
+.s-p-7 {
+  padding: 7rem;
+}
+
+.s-mt-7 {
+  margin-top: 7rem;
+}
+
+.s-pt-7 {
+  padding-top: 7rem;
+}
+
+.s-mr-7 {
+  margin-right: 7rem;
+}
+
+.s-pr-7 {
+  padding-right: 7rem;
+}
+
+.s-mb-7 {
+  margin-bottom: 7rem;
+}
+
+.s-pb-7 {
+  padding-bottom: 7rem;
+}
+
+.s-ml-7 {
+  margin-left: 7rem;
+}
+
+.s-pl-7 {
+  padding-left: 7rem;
+}
+
+.s-m-8 {
+  margin: 8rem;
+}
+
+.s-p-8 {
+  padding: 8rem;
+}
+
+.s-mt-8 {
+  margin-top: 8rem;
+}
+
+.s-pt-8 {
+  padding-top: 8rem;
+}
+
+.s-mr-8 {
+  margin-right: 8rem;
+}
+
+.s-pr-8 {
+  padding-right: 8rem;
+}
+
+.s-mb-8 {
+  margin-bottom: 8rem;
+}
+
+.s-pb-8 {
+  padding-bottom: 8rem;
+}
+
+.s-ml-8 {
+  margin-left: 8rem;
+}
+
+.s-pl-8 {
+  padding-left: 8rem;
+}
+
+.s-m-9 {
+  margin: 9rem;
+}
+
+.s-p-9 {
+  padding: 9rem;
+}
+
+.s-mt-9 {
+  margin-top: 9rem;
+}
+
+.s-pt-9 {
+  padding-top: 9rem;
+}
+
+.s-mr-9 {
+  margin-right: 9rem;
+}
+
+.s-pr-9 {
+  padding-right: 9rem;
+}
+
+.s-mb-9 {
+  margin-bottom: 9rem;
+}
+
+.s-pb-9 {
+  padding-bottom: 9rem;
+}
+
+.s-ml-9 {
+  margin-left: 9rem;
+}
+
+.s-pl-9 {
+  padding-left: 9rem;
+}
+
+.s-m-10 {
+  margin: 10rem;
+}
+
+.s-p-10 {
+  padding: 10rem;
+}
+
+.s-mt-10 {
+  margin-top: 10rem;
+}
+
+.s-pt-10 {
+  padding-top: 10rem;
+}
+
+.s-mr-10 {
+  margin-right: 10rem;
+}
+
+.s-pr-10 {
+  padding-right: 10rem;
+}
+
+.s-mb-10 {
+  margin-bottom: 10rem;
+}
+
+.s-pb-10 {
+  padding-bottom: 10rem;
+}
+
+.s-ml-10 {
+  margin-left: 10rem;
+}
+
+.s-pl-10 {
+  padding-left: 10rem;
+}
+
+/*# sourceMappingURL=index.css.map */

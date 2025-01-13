@@ -1,0 +1,38 @@
+.header a{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.header a.logout{
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+/* .header .headerMenu{
+    margin-left: 210px !important;
+} */
+
+.header{
+    padding: 6px;
+    box-shadow: 0 1px 7px 0px var(--primary-color);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background: #fff;
+}
+
+.menu-icon{
+    color: var(--primary-color) !important;
+}
