@@ -17,6 +17,21 @@ h1, h2, h3, h4, h5, h6{
   margin-left: 250px;
 }
 
+.background_changer{
+  position: fixed;
+  right: 10px;
+  background: transparent;
+  border-radius: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.background_changer button{
+  display: block;
+  width: 100%;
+}
+
+
 
 .menu-icon {
   font-size: 24px;

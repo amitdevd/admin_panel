@@ -38,14 +38,29 @@ function Dashboard() {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+  const [color, setColor] = useState("olive");
+
   return (
-    <div className='wh-100 vh-100 position-relative'>
+    <div className='wh-100 vh-100 position-relative' style={{backgroundColor: color}}>
       <Header toggleSidebar={toggleSidebar} sidebarWidth={sidebarWidth} />
       <Sidebar isSidebarOpen={isSidebarOpen} sidebarWidth={sidebarWidth} />
       <div className={`layoutMiddle content ${isSidebarOpen ? 'sidebar-open' : ''}`}>
         <Outlet />
       </div>
-
+        <div className="background_changer" >
+            <button className=" p-2 my-2 text-white" style={{backgroundColor: 'ColorChange'}} 
+            onClick={() =>setColor ("red")}>Danger</button>
+            <button className=" p-2 my-2 text-white" style={{backgroundColor: 'green'}}
+            onClick={() =>setColor ("green")}>Success</button>
+            <button className=" p-2 my-2  text-red" style={{backgroundColor: 'yellow'}}
+            onClick={() =>setColor ("yellow")}>Warning</button>
+            <button className=" p-2 my-2" style={{backgroundColor: '#0dcaf0'}}
+            onClick={() =>setColor ("#0dcaf0")}>Info</button>
+            <button className=" p-2 my-2" style={{backgroundColor: '#f8f9fa'}}
+            onClick={() =>setColor ("#f8f9fa")}>Light</button>
+            <button className=" p-2 my-2 text-white" style={{backgroundColor: '#212529'}}
+            onClick={() =>setColor ("#212529")}>Dark</button>
+          </div>
       <Footer />
     </div>
   )

@@ -4,7 +4,7 @@ import Logout from './component/auth/logout/logout';
 import Dashboard from './component/admin/home/dashboard';
 import Layout from './component/admin/layout/layout';
 import WarehouseMgmt from './component/admin/layout/warehouse/warehouse-mgmt';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { HashRouter as Router, Routes, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Forgotpassword from './component/auth/forgot-password/forgotpassword';
 import Sendotp from './component/auth/send-otp/sendOTP';

@@ -1,0 +1,17 @@
+[
+  {
+    "id": 12,
+    "product_name": "Apple",
+    "product_description": "Discover cutting-edge design patterns and UI components that elevate your digital experiences"
+  },
+  {
+    "id": 13,
+    "product_name": "Banana",
+    "product_description": "Banana is a healthy fruit"
+  },
+  {
+    "id": 14,
+    "product_name": "Orange",
+    "product_description": "Orange is a citrus fruit"
+  }
+]
