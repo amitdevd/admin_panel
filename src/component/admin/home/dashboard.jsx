@@ -48,7 +48,7 @@ function Dashboard() {
         <Outlet />
       </div>
         <div className="background_changer" >
-            <button className=" p-2 my-2 text-white" style={{backgroundColor: 'ColorChange'}} 
+            <button className=" p-2 my-2 text-white" style={{backgroundColor: 'red'}} 
             onClick={() =>setColor ("red")}>Danger</button>
             <button className=" p-2 my-2 text-white" style={{backgroundColor: 'green'}}
             onClick={() =>setColor ("green")}>Success</button>
