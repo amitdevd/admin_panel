@@ -5,6 +5,38 @@
   --secondry-color: red;
 }
 
+.login_other_page{
+  position: relative;
+}
+
+.login_other_page .page_divider{
+  position: absolute;
+  top:0px;
+  left: 0px;
+  width: 50%;
+  background: #e0e0e0;
+  height: 100%;
+  transition: all 0.6s ease;
+}
+
+.login_other_page:hover .page_divider{
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  background: #e0e0e0;
+  height: calc(100vh - 0);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(120deg);
+  border: 1px solid red;
+  transform: translate(-50%, -50%);
+}
+
+.login_other_page .loginPage:hover ~ .page_divider{
+  left: 0;
+  height: 100%;
+  transform: rotate(0deg);
+}
+
 .App {
   text-align: center;
 }

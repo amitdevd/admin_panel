@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import './login.css';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../admin/layout/layout';
+import { Image } from '../../../img-consts/img-const';
 
 
 function Login() {
@@ -18,10 +19,13 @@ function Login() {
 
   return (
     <div>
-      <div className='vh-100 d-flex align-items-center justify-content-center'>
+      <div className='login_other_page vh-100 d-flex align-items-center justify-content-center'>
+        <div className='page_divider'></div>
         <div className='loginPage'>
             <div className='text-center'>
-                <Link className='logo'>Logo</Link>
+                <Link className='logo'>
+                  <img src={Image.Logo_URL} alt='logo' width={200} height={56} />
+                </Link>
             </div>
             <div className="form-group mb-3">
                 <label for="exampleFormControlInput1" className="form-label">Email address</label>
@@ -33,7 +37,7 @@ function Login() {
                 <input type="email" className="form-control" value={password} onChange={(e) => setPassword(e.target.value)} 
                  id="exampleFormControlInput1" placeholder="name@example.com" />
             </div>
-            <Link className='mt-3' to='/forgotPassword' >Forgot Password</Link>
+            <Link className='mt-3 fs-4 text-black' to='/forgotPassword' >Forgot Password</Link>
             <Link to='/admin' className='btn login-btn'>Login</Link>
             <button onClick={handleSubmit}>submit</button>
         </div>
