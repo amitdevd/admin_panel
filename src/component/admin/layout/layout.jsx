@@ -1,8 +1,10 @@
-import React, { useState, useCallback, useEffect, useRef } from 'react'
+import React, { useState, useCallback, useEffect, useRef, createContext } from 'react'
 import './layout.css';
-import { FaN } from 'react-icons/fa6';
 import InputBox from './input';
 import useCurrencyInfo from '../../../hooks/usecurrencyhooks';
+
+
+export const UserContext = createContext(null)
 
 function Layout() {
 

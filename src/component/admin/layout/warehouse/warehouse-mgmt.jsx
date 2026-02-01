@@ -30,7 +30,7 @@ function WarehouseMgmt() {
   const [selectedDate, setselectedDate] = useState(null);
 
   const handleDateChange = (date) => {
-    selectedDate = (date);
+    selectedDate = (setselectedDate);
   };
 
   let [addCounter, setCounter] = useState(0);

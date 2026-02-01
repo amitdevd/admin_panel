@@ -134,3 +134,50 @@ h1, h2, h3, h4, h5, h6{
   }
 
 /* userbuyer */
+/* DEFAULT TRANSITION (smooth effect) */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* LIGHT THEME */
+html.light body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* DARK THEME */
+html.dark body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* HEADER */
+html.light .header {
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+html.dark .header {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* SIDEBAR */
+html.light .sidebar {
+  background-color: #ffffff;
+}
+
+html.dark .sidebar {
+  background-color: #181818;
+}
+
+/* BUTTON / TOGGLE */
+.toggle-light {
+  background-color: #e0e0e0 !important;
+  color: #000 !important;
+}
+
+.toggle-dark {
+  background-color: #333 !important;
+  color: #fff !important;
+}

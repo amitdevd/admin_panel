@@ -15,8 +15,9 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Dialog from '@mui/material/Dialog';
 import PersonIcon from '@mui/icons-material/Person';
 import AddIcon from '@mui/icons-material/Add';
-import Typography from '@mui/material/Typography';
 import { blue } from '@mui/material/colors';
+import useTheme from '../../component/contexts/theme';
+import ThemeToggle from '../../component/ToggleButton';
 
 const emails = ['username@gmail.com', 'user02@gmail.com'];
 
@@ -85,13 +86,48 @@ function Header({ sidebarWidth, toggleSidebar }) {
     setSelectedValue(value);
   };
 
+
+  {/* //toggle button 
+
+  const [themeMode, setThemeMode] = useState("light")
+  
+    const lightTheme =() =>{
+      setThemeMode("light")
+    }
+    const darkTheme =() =>{
+      setThemeMode("dark")
+    }
+  
+    useEffect(()=> {
+      document.querySelector('html').classList.remove("light", "dark")
+      document.querySelector('html').classList.add(themeMode)
+    }, [themeMode])
+  
+    const [selected, setSelected] = useState(false);
+  
+    const onChangeBtn =(e) => {
+      const darkModeStatus = e.currentTarget.checked
+      if (darkModeStatus) {
+        darkTheme()
+      } else{
+        lightTheme ()
+      }
+    }
+
+    //toogle button end*/}
+
+    const { themeMode } = useTheme();
+    
+
   return (
-    <div className='header' >
+    <div className={themeMode === "dark" ? "bg-dark text-white" : "bg-light header"} >
       <div className='d-flex mx-2 auto headerMenu' style={{ marginLeft: `${sidebarWidth}px` }}>
         <Link >Logo</Link>
         <Link className="menu-icon ms-3" onClick={toggleSidebar}><IoMdMenu /></Link>
-        <div className='ms-auto'>
-          <Link className='logout'>
+        <div className='d-flex ms-auto'>
+          <ThemeToggle  />
+            
+          <Link className='logout ms-3'>
             <Button variant="outlined" onClick={handleClickOpen}>
               <ArrowLeft />
             </Button>

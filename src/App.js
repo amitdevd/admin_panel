@@ -13,24 +13,42 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import Userbuyermgmt from './component/admin/layout/user-buyer-mgmt/user-buyer-mgmt';
+import UserbuyermgmtProvider from './component/admin/layout/user-buyer-mgmt/user-buyer-mgmt';
+import Profile from './component/admin/layout/profile';
+import ThemeProviderWrapper from './component/contexts/ThemeProviderWrapper';
+// import { ThemeProvider, useTheme } from 'styled-components';
+// import { useEffect, useState } from 'react';
+// import { ThemeProvide } from './component/contexts/theme';
+// import CheckIcon from '@mui/icons-material/Check';
+// import ToggleButton from '@mui/material/ToggleButton';
+// import Userbuyermgmt from './component/admin/layout/user-buyer-mgmt/user-buyer-mgmt';
 
 function App() {
+
   return (
-    <Router>
-      <Routes>
-        <Route path='/' element={<Login />} />
-        <Route path='/forgotPassword' element={<Forgotpassword />} />
-        <Route path='/updatePassword' element={<Updatepassword />} />
-        <Route path='/sendOtp' element={<Sendotp />} />
-        <Route path='/logout' element={<Logout />} />
-        <Route path='/admin' element={<Dashboard />} >
-          <Route path='/admin/dashboard' element={<Layout />}></Route>
-          <Route path='/admin/warehouse-mgmt' element={<WarehouseMgmt />}></Route>
-          <Route path='/admin/user-buyer-mgmt' element={<Userbuyermgmt />}></Route>
-        </Route>
-      </Routes>
-    </Router>
+    <>
+    
+      <ThemeProviderWrapper>
+        <UserbuyermgmtProvider>
+          <Router>
+            <Routes>
+              <Route path='/' element={<Login />} />
+              <Route path='/forgotPassword' element={<Forgotpassword />} />
+              <Route path='/updatePassword' element={<Updatepassword />} />
+              <Route path='/sendOtp' element={<Sendotp />} />
+              <Route path='/logout' element={<Logout />} />
+              <Route path='/admin' element={<Dashboard />} >
+                <Route path='/admin/dashboard' element={<Layout />}></Route>
+                <Route path='/admin/warehouse-mgmt' element={<WarehouseMgmt />}></Route>
+                <Route path='/admin/profile' element={<Profile />}></Route>
+                // <Route path='/admin/user-buyer-mgmt' element={<UserbuyermgmtProvider />}></Route>
+                
+              </Route>
+            </Routes>
+          </Router>
+        </UserbuyermgmtProvider>
+      </ThemeProviderWrapper>
+    </>
   );
 }
 
