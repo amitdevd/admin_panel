@@ -13,7 +13,7 @@
     font-size: 14px;
     line-height: 24px;
     font-weight: 500;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     padding: 5px;
   }
@@ -48,12 +48,13 @@
 
   .sideMenu:hover{
     border-left: 2px solid var(--secondry-color);
+    color: #fff;
   }
 
 
   .sidebarPanel .sidebar {
     width: 250px;
-    margin-top: 42px;
+    padding-top: 62px;
     height: 100vh;
     background-color: var(--primary-color);
     color: white;

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './sidebar.css';
 import { LuCircleArrowLeft } from "react-icons/lu";
+import { Image } from '../../img-consts/img-const';
 
 function Sidebar( { isSidebarOpen, sidebarWidth } ) {
   return (
@@ -12,7 +13,7 @@ function Sidebar( { isSidebarOpen, sidebarWidth } ) {
         <li>
           <Link to='/admin/dashboard' className='sideMenu d-flex align-items-center justify-content-between'>
             <div className='d-flex align-items-center'>
-              <img src="/image/Brands.png" alt='brand-img' />
+              <img src={Image.sidePanel_URL} alt='brand-img' />
               <span class="side-menu__label">Dashboard </span>
             </div>
             <span className='icons'><LuCircleArrowLeft /></span>
@@ -21,7 +22,7 @@ function Sidebar( { isSidebarOpen, sidebarWidth } ) {
         <li>
           <Link to='/admin/warehouse-mgmt' className='sideMenu d-flex align-items-center justify-content-between'>
             <div className='d-flex align-items-center'>
-              <img src="/image/Brands.png" alt='brand-img' />
+              <img src={Image.sidePanel_URL} alt='brand-img' />
               <span class="side-menu__label">Warehouse Management</span>
             </div>
             <span className='icons'><LuCircleArrowLeft /></span>
@@ -30,7 +31,7 @@ function Sidebar( { isSidebarOpen, sidebarWidth } ) {
         <li>
           <Link to='/admin/user-buyer-mgmt' className='sideMenu d-flex align-items-center justify-content-between'>
             <div className='d-flex align-items-center'>
-              <img src="/image/Brands.png" alt='brand-img' />
+              <img src={Image.sidePanel_URL} alt='brand-img' />
               <span class="side-menu__label">User/Buyer Management</span>
             </div>
             <span className='icons'><LuCircleArrowLeft /></span>

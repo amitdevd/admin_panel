@@ -18,6 +18,7 @@ import AddIcon from '@mui/icons-material/Add';
 import { blue } from '@mui/material/colors';
 import useTheme from '../../component/contexts/theme';
 import ThemeToggle from '../../component/ToggleButton';
+import { Image } from '../../img-consts/img-const';
 
 const emails = ['username@gmail.com', 'user02@gmail.com'];
 
@@ -122,9 +123,9 @@ function Header({ sidebarWidth, toggleSidebar }) {
   return (
     <div className={themeMode === "dark" ? "bg-dark text-white" : "bg-light header"} >
       <div className='d-flex mx-2 auto headerMenu' style={{ marginLeft: `${sidebarWidth}px` }}>
-        <Link >Logo</Link>
+        <Link ><img src={Image.Logo_URL} alt='logo' width={200} height={56} /></Link>
         <Link className="menu-icon ms-3" onClick={toggleSidebar}><IoMdMenu /></Link>
-        <div className='d-flex ms-auto'>
+        <div className='d-flex ms-auto align-items-center'>
           <ThemeToggle  />
             
           <Link className='logout ms-3'>

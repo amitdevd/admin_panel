@@ -15,7 +15,7 @@ const ThemeToggle = () => {
 
   return (
     <ToggleButton
-      className={themeMode === "dark" ? "toggle-dark" : "toggle-light"}
+      className={themeMode === "dark" ? "toggle-dark" : "toggle-light p-0 w-10"}
       value="theme"
       selected={themeMode === "dark"}
       onChange={onChangeBtn}
