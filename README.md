@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-
+"A fully functional admin panel developed using React.js with reusable components, responsive design, and efficient state management for a seamless user experience."
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
